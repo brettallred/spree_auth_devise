@@ -6,6 +6,8 @@ class Spree::UserSessionsController < Devise::SessionsController
   include Spree::Core::ControllerHelpers::Order
   include Spree::Core::ControllerHelpers::Store
 
+  layout 'spree/layouts/login'
+
   def create
     authenticate_spree_user!
 
