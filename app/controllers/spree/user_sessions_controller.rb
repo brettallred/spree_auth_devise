@@ -6,6 +6,8 @@ class Spree::UserSessionsController < Devise::SessionsController
   include Spree::Core::ControllerHelpers::Order
   include Spree::Core::ControllerHelpers::Store
 
+  layout 'spree/layouts/login'
+
   if defined?(SpreeI18n::ControllerLocaleHelper)
     include SpreeI18n::ControllerLocaleHelper
   end
