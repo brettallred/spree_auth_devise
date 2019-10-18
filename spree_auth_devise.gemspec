@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_auth_devise'
-  s.version     = '3.5.0'
+  s.version     = '4.0'
   s.summary     = 'Provides authentication and authorization services for use with Spree by using Devise and CanCan.'
   s.description = s.summary
 
@@ -19,10 +19,10 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'devise', '~> 4.4.0'
+  s.add_dependency 'devise', '~> 4.7.1'
   s.add_dependency 'devise-encryptable', '0.2.0'
 
-  spree_version = '>= 3.1.0', '< 4.0'
+  spree_version = '>= 3.1.0', '< 5.0'
   s.add_dependency 'spree_core', spree_version
   s.add_dependency 'spree_extension'
 
